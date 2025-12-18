@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vickey Bora | Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="description" content="Vickey Bora – Professional Web Designer & Python Developer">
+  <meta name="author" content="Vickey Bora">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="hero">
+  <img src="{{ url_for('static', filename='images/profile.png') }}" class="profile">
+  <h1>Vickey Bora</h1>
+  <p>Web Designer • Python Developer • Freelancer</p>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I build modern, fast and responsive websites using HTML, CSS, JavaScript and Python.
+    I help businesses grow online with clean design and solid backend systems.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Python & Flask</li>
+    <li>SEO Optimization</li>
+    <li>Responsive Design</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <h2>Contact Me</h2>
+
+  <form action="/contact" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+</section>
+
+<footer>
+  <p>© 2025 Vickey Bora. All rights reserved.</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/917986326969" target="_blank" id="whatsapp-btn">💬</a>
